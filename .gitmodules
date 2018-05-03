@@ -1,0 +1,8 @@
+[submodule "Source/nsfplay"]
+	path = Source/nsfplay
+	url = https://github.com/osoumen/nsfplay.git
+	branch = gcc-fix-01
+[submodule "Gin"]
+	path = Gin
+	url = https://github.com/osoumen/Gin.git
+	branch = filesystemwatcher-fix-01

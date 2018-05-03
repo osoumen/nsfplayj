@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT name="nsfplayj" projectType="guiapp" jucerVersion="5.3.1">
+  <MAINGROUP id="JOc2dT" name="nsfplayj">
+    <GROUP id="{94CEFD1F-99FE-EDC9-D523-73B56832FB73}" name="Source">
+      <FILE id="rQsKIH" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="uJbglG" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="CIL1FK" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+    <GROUP id="{B0951B08-F985-E757-FAE7-F14147F18885}" name="xgm">
+      <GROUP id="{CFF7BFB0-4CAF-3B5C-BE57-F9A2AEA59F0E}" name="browser">
+        <FILE id="d6pywH" name="browser.h" compile="0" resource="0" file="Source/nsfplay/xgm/browser/browser.h"/>
+      </GROUP>
+      <GROUP id="{20A1E41B-C19E-E4A5-897C-D7E73654AA44}" name="devices">
+        <GROUP id="{2A8E5CDD-0C15-E329-FEA5-C9A4462099CD}" name="Audio">
+          <FILE id="jEJwVK" name="amplifier.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Audio/amplifier.h"/>
+          <FILE id="YGnXKR" name="echo.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Audio/echo.cpp"/>
+          <FILE id="EdW7pX" name="echo.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Audio/echo.h"/>
+          <FILE id="KPH0sV" name="filter.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Audio/filter.cpp"/>
+          <FILE id="jNg6Dl" name="filter.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Audio/filter.h"/>
+          <FILE id="e3tFV0" name="MedianFilter.cpp" compile="1" resource="0"
+                file="Source/nsfplay/xgm/devices/Audio/MedianFilter.cpp"/>
+          <FILE id="Qqy57q" name="MedianFilter.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Audio/MedianFilter.h"/>
+          <FILE id="mkbjSc" name="mixer.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Audio/mixer.h"/>
+          <FILE id="IPYZ0t" name="rconv.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Audio/rconv.cpp"/>
+          <FILE id="PAVxzR" name="rconv.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Audio/rconv.h"/>
+        </GROUP>
+        <GROUP id="{729056C1-80BF-5800-A0C1-39F6FEAA03A0}" name="CPU">
+          <GROUP id="{771B47C6-220D-836D-E461-C037F29B35DC}" name="km6502">
+            <FILE id="M0SHqj" name="km65c02.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/CPU/km6502/km65c02.h"/>
+            <FILE id="lfb59M" name="km65c02m.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/CPU/km6502/km65c02m.h"/>
+            <FILE id="u45G6n" name="km6280.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/CPU/km6502/km6280.h"/>
+            <FILE id="SsMM6m" name="km6280m.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/CPU/km6502/km6280m.h"/>
+            <FILE id="EjrxWO" name="km6502.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/CPU/km6502/km6502.h"/>
+            <FILE id="hg0CpO" name="km6502.txt" compile="0" resource="1" file="Source/nsfplay/xgm/devices/CPU/km6502/km6502.txt"/>
+            <FILE id="govTbV" name="km6502cd.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/CPU/km6502/km6502cd.h"/>
+            <FILE id="Ag9eRQ" name="km6502ct.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/CPU/km6502/km6502ct.h"/>
+            <FILE id="ASHvrG" name="km6502ex.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/CPU/km6502/km6502ex.h"/>
+            <FILE id="af2fEf" name="km6502ft.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/CPU/km6502/km6502ft.h"/>
+            <FILE id="VsIWfd" name="km6502m.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/CPU/km6502/km6502m.h"/>
+            <FILE id="ii7jif" name="km6502ot.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/CPU/km6502/km6502ot.h"/>
+            <FILE id="bmrAZA" name="kmconfig.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/CPU/km6502/kmconfig.h"/>
+          </GROUP>
+          <FILE id="ScYT7s" name="nes_cpu.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/CPU/nes_cpu.cpp"/>
+          <FILE id="Tt1Yxe" name="nes_cpu.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/CPU/nes_cpu.h"/>
+        </GROUP>
+        <GROUP id="{C7A18901-F6AA-3F29-FAA6-AAF243941DF5}" name="Memory">
+          <FILE id="dl18BE" name="nes_bank.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Memory/nes_bank.cpp"/>
+          <FILE id="r0xJ3J" name="nes_bank.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Memory/nes_bank.h"/>
+          <FILE id="ZB8Uyv" name="nes_mem.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Memory/nes_mem.cpp"/>
+          <FILE id="S8IJMe" name="nes_mem.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Memory/nes_mem.h"/>
+          <FILE id="wG5Vqz" name="ram64k.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Memory/ram64k.cpp"/>
+          <FILE id="AOrCzN" name="ram64k.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Memory/ram64k.h"/>
+        </GROUP>
+        <GROUP id="{13F18DF5-4D1F-854C-533D-119095D744F3}" name="Misc">
+          <FILE id="BZ3ncq" name="block.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Misc/block.h"/>
+          <FILE id="YoIcOd" name="detect.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Misc/detect.cpp"/>
+          <FILE id="nEu7TL" name="detect.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Misc/detect.h"/>
+          <FILE id="OFFq4Y" name="log_cpu.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Misc/log_cpu.cpp"/>
+          <FILE id="nVHGLW" name="log_cpu.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Misc/log_cpu.h"/>
+          <FILE id="FTwWiU" name="nes_detect.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Misc/nes_detect.cpp"/>
+          <FILE id="gQ72nn" name="nes_detect.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Misc/nes_detect.h"/>
+        </GROUP>
+        <GROUP id="{8F56D3BE-1D2B-35CF-90AF-46E47B212E11}" name="Sound">
+          <GROUP id="{8C8653A4-4D89-3877-5A10-FDF9DA71BF88}" name="legacy">
+            <FILE id="LOWMHq" name="281btone.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/legacy/281btone.h"/>
+            <FILE id="kRPauA" name="2413tone.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/legacy/2413tone.h"/>
+            <FILE id="tM8Hm9" name="emu2149.c" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Sound/legacy/emu2149.c"/>
+            <FILE id="kUgSvT" name="emu2149.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/legacy/emu2149.h"/>
+            <FILE id="Sxz28J" name="emu2212.c" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Sound/legacy/emu2212.c"/>
+            <FILE id="HtZm1H" name="emu2212.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/legacy/emu2212.h"/>
+            <FILE id="MVlyHx" name="emu2413.c" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Sound/legacy/emu2413.c"/>
+            <FILE id="eUQKmy" name="emu2413.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/legacy/emu2413.h"/>
+            <FILE id="x8muDi" name="emutypes.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/legacy/emutypes.h"/>
+            <FILE id="BLrDcu" name="vrc7tone_ft35.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/legacy/vrc7tone_ft35.h"/>
+            <FILE id="lnlUx6" name="vrc7tone_ft36.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/legacy/vrc7tone_ft36.h"/>
+            <FILE id="QO9n0w" name="vrc7tone_kt1.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/legacy/vrc7tone_kt1.h"/>
+            <FILE id="Rd72WP" name="vrc7tone_kt2.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/legacy/vrc7tone_kt2.h"/>
+            <FILE id="Vs3BQv" name="vrc7tone_mo.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/legacy/vrc7tone_mo.h"/>
+            <FILE id="SHjyJB" name="vrc7tone_rw.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/legacy/vrc7tone_rw.h"/>
+          </GROUP>
+          <FILE id="ARhat9" name="nes_apu.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_apu.cpp"/>
+          <FILE id="CAPyH6" name="nes_apu.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_apu.h"/>
+          <FILE id="Fb4snt" name="nes_dmc.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_dmc.cpp"/>
+          <FILE id="nwszdq" name="nes_dmc.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_dmc.h"/>
+          <FILE id="w2WuaD" name="nes_fds.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_fds.cpp"/>
+          <FILE id="UZVkn6" name="nes_fds.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_fds.h"/>
+          <FILE id="QJPPFk" name="nes_fme7.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_fme7.cpp"/>
+          <FILE id="KVZraa" name="nes_fme7.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_fme7.h"/>
+          <FILE id="ZxXe5m" name="nes_mmc5.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_mmc5.cpp"/>
+          <FILE id="kMuQg6" name="nes_mmc5.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_mmc5.h"/>
+          <FILE id="zG3eoz" name="nes_n106.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_n106.cpp"/>
+          <FILE id="Lw8S45" name="nes_n106.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_n106.h"/>
+          <FILE id="m0Yf9c" name="nes_vrc6.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_vrc6.cpp"/>
+          <FILE id="e3HZIc" name="nes_vrc6.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_vrc6.h"/>
+          <FILE id="UDgkcT" name="nes_vrc7.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_vrc7.cpp"/>
+          <FILE id="szGwpn" name="nes_vrc7.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/Sound/nes_vrc7.h"/>
+        </GROUP>
+        <FILE id="DoUewq" name="all.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/all.h"/>
+        <FILE id="Bmxip5" name="device.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/device.h"/>
+        <FILE id="FO4oNm" name="devinfo.h" compile="0" resource="0" file="Source/nsfplay/xgm/devices/devinfo.h"/>
+      </GROUP>
+      <GROUP id="{AF393CC5-791D-34D7-A951-9E0AF1D774D4}" name="player">
+        <GROUP id="{F5F2AFCC-4BD2-F410-3E64-F252EE684B3E}" name="nsf">
+          <GROUP id="{BB2E5DFF-FC6D-B9BE-727F-9B5030F2A14C}" name="pls">
+            <FILE id="sdqSjw" name="ppls.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/player/nsf/pls/ppls.cpp"/>
+            <FILE id="Y2DLgJ" name="ppls.h" compile="0" resource="0" file="Source/nsfplay/xgm/player/nsf/pls/ppls.h"/>
+            <FILE id="vMmWDk" name="sstream.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/player/nsf/pls/sstream.cpp"/>
+            <FILE id="uXC7hq" name="sstream.h" compile="0" resource="0" file="Source/nsfplay/xgm/player/nsf/pls/sstream.h"/>
+          </GROUP>
+          <FILE id="ZTI0Lb" name="nsf.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/player/nsf/nsf.cpp"/>
+          <FILE id="Wjm4yd" name="nsf.h" compile="0" resource="0" file="Source/nsfplay/xgm/player/nsf/nsf.h"/>
+          <FILE id="nsJZrZ" name="nsfconfig.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/player/nsf/nsfconfig.cpp"/>
+          <FILE id="tWfXWD" name="nsfconfig.h" compile="0" resource="0" file="Source/nsfplay/xgm/player/nsf/nsfconfig.h"/>
+          <FILE id="cBPVMD" name="nsfplay.cpp" compile="1" resource="0" file="Source/nsfplay/xgm/player/nsf/nsfplay.cpp"/>
+          <FILE id="XN1lsf" name="nsfplay.h" compile="0" resource="0" file="Source/nsfplay/xgm/player/nsf/nsfplay.h"/>
+        </GROUP>
+        <GROUP id="{B2FD09F2-6A1D-A671-1CE3-884FF4D4F45B}" name="plugin">
+          <GROUP id="{36092BA8-1605-9CBB-C6BD-CF69DF09BA8C}" name="kbmedia">
+            <GROUP id="{3DC447DE-3B15-FBFB-9DE3-3FC9AC9F73CC}" name="sdk">
+              <FILE id="QbjvmB" name="kmp_pi.h" compile="0" resource="0" file="Source/nsfplay/xgm/player/plugin/kbmedia/sdk/kmp_pi.h"/>
+            </GROUP>
+            <FILE id="ocIIF7" name="plugin.cpp" compile="0" resource="0" file="Source/nsfplay/xgm/player/plugin/kbmedia/plugin.cpp"/>
+            <FILE id="gcg52N" name="plugin.h" compile="0" resource="0" file="Source/nsfplay/xgm/player/plugin/kbmedia/plugin.h"/>
+          </GROUP>
+          <GROUP id="{5F24F537-7814-1082-A544-05087533241A}" name="winamp2">
+            <GROUP id="{F61FABDB-6EE9-967A-7F81-8A8122500D7B}" name="sdk">
+              <FILE id="dLxtyN" name="FRONTEND.H" compile="0" resource="0" file="Source/nsfplay/xgm/player/plugin/winamp2/sdk/FRONTEND.H"/>
+              <FILE id="SG6q8a" name="IN2.H" compile="0" resource="0" file="Source/nsfplay/xgm/player/plugin/winamp2/sdk/IN2.H"/>
+              <FILE id="aA9d06" name="OUT.H" compile="0" resource="0" file="Source/nsfplay/xgm/player/plugin/winamp2/sdk/OUT.H"/>
+            </GROUP>
+            <FILE id="Io61kB" name="in_module.cpp" compile="0" resource="0" file="Source/nsfplay/xgm/player/plugin/winamp2/in_module.cpp"/>
+            <FILE id="v2LOPf" name="in_module.h" compile="0" resource="0" file="Source/nsfplay/xgm/player/plugin/winamp2/in_module.h"/>
+            <FILE id="niZCSV" name="in_module_msp.cpp" compile="0" resource="0"
+                  file="Source/nsfplay/xgm/player/plugin/winamp2/in_module_msp.cpp"/>
+            <FILE id="mHY88G" name="readme.txt" compile="0" resource="0" file="Source/nsfplay/xgm/player/plugin/winamp2/readme.txt"/>
+          </GROUP>
+        </GROUP>
+        <FILE id="hlAp6i" name="all.h" compile="0" resource="0" file="Source/nsfplay/xgm/player/all.h"/>
+        <FILE id="iib15A" name="midi_interface.h" compile="0" resource="0"
+              file="Source/nsfplay/xgm/player/midi_interface.h"/>
+        <FILE id="kqjthR" name="player.h" compile="0" resource="0" file="Source/nsfplay/xgm/player/player.h"/>
+        <FILE id="IbTf5p" name="soundData.h" compile="0" resource="0" file="Source/nsfplay/xgm/player/soundData.h"/>
+      </GROUP>
+      <GROUP id="{26E6517B-907A-ADD2-C1AF-732315675CFD}" name="utils">
+        <FILE id="xOreGX" name="nsf_tag.cpp" compile="0" resource="0" file="Source/nsfplay/xgm/utils/nsf_tag.cpp"/>
+        <FILE id="srSnQb" name="nsf_tag.h" compile="0" resource="0" file="Source/nsfplay/xgm/utils/nsf_tag.h"/>
+        <FILE id="A7Obv0" name="tagctrl.h" compile="0" resource="0" file="Source/nsfplay/xgm/utils/tagctrl.h"/>
+      </GROUP>
+      <FILE id="gJ9crm" name="debugout.h" compile="0" resource="0" file="Source/nsfplay/xgm/debugout.h"/>
+      <FILE id="V1o05x" name="Makefile" compile="0" resource="0" file="Source/nsfplay/xgm/Makefile"/>
+      <FILE id="QeK4pl" name="readme.txt" compile="0" resource="0" file="Source/nsfplay/xgm/readme.txt"/>
+      <FILE id="XvPqQD" name="readme_ja.txt" compile="0" resource="0" file="Source/nsfplay/xgm/readme_ja.txt"/>
+      <FILE id="VeLkQi" name="version.h" compile="0" resource="0" file="Source/nsfplay/xgm/version.h"/>
+      <FILE id="BoABDD" name="xgm.h" compile="0" resource="0" file="Source/nsfplay/xgm/xgm.h"/>
+      <FILE id="ZVj53R" name="xgm.vcproj" compile="0" resource="0" file="Source/nsfplay/xgm/xgm.vcproj"/>
+      <FILE id="cRAn6V" name="xtypes.h" compile="0" resource="0" file="Source/nsfplay/xgm/xtypes.h"/>
+    </GROUP>
+    <GROUP id="{A3D8C054-871E-F39C-52E8-BC2AFB99D488}" name="vcm">
+      <GROUP id="{3B43A062-9D1F-BFC3-C044-E3962FC5534A}" name="ui">
+        <GROUP id="{CF47076F-5CD6-096E-DE46-009C6DFC594E}" name="win32">
+          <GROUP id="{2682A57D-7C3A-6AAE-DDC7-88D71554F668}" name="res">
+            <FILE id="ZfBwUm" name="win32.ico" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/res/win32.ico"/>
+            <FILE id="uNbiLw" name="win32.manifest" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/res/win32.manifest"/>
+            <FILE id="spuflu" name="win32.rc2" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/res/win32.rc2"/>
+          </GROUP>
+          <FILE id="sbMa2j" name="ReadMe.txt" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/ReadMe.txt"/>
+          <FILE id="lPUE3N" name="resource.h" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/resource.h"/>
+          <FILE id="qx8R6n" name="stdafx.cpp" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/stdafx.cpp"/>
+          <FILE id="e8ptM8" name="stdafx.h" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/stdafx.h"/>
+          <FILE id="MdqyEC" name="vcm_ui.vcproj" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcm_ui.vcproj"/>
+          <FILE id="CA8T8e" name="vcmCheck.cpp" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmCheck.cpp"/>
+          <FILE id="qSexoF" name="vcmCheck.h" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmCheck.h"/>
+          <FILE id="D2nkmj" name="vcmCombo.cpp" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmCombo.cpp"/>
+          <FILE id="Qqyfky" name="vcmCombo.h" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmCombo.h"/>
+          <FILE id="aIrVCA" name="vcmCtrl.cpp" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmCtrl.cpp"/>
+          <FILE id="VPR40D" name="vcmCtrl.h" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmCtrl.h"/>
+          <FILE id="AekPZ3" name="vcmDlg.cpp" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmDlg.cpp"/>
+          <FILE id="huCUai" name="vcmDlg.h" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmDlg.h"/>
+          <FILE id="aT7V5Z" name="vcmSlider.cpp" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmSlider.cpp"/>
+          <FILE id="XEQZjz" name="vcmSlider.h" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmSlider.h"/>
+          <FILE id="DYkHEB" name="vcmSpin.cpp" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmSpin.cpp"/>
+          <FILE id="MSrI2d" name="vcmSpin.h" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmSpin.h"/>
+          <FILE id="SbLs2e" name="vcmText.cpp" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmText.cpp"/>
+          <FILE id="RKVQNL" name="vcmText.h" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmText.h"/>
+          <FILE id="xlCMyA" name="vcmTree.cpp" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmTree.cpp"/>
+          <FILE id="pQfgB4" name="vcmTree.h" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/vcmTree.h"/>
+          <FILE id="mHZg9E" name="win32.cpp" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/win32.cpp"/>
+          <FILE id="EcHdIL" name="win32.h" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/win32.h"/>
+          <FILE id="RUJcF5" name="win32.rc" compile="0" resource="0" file="Source/nsfplay/vcm/ui/win32/win32.rc"/>
+        </GROUP>
+      </GROUP>
+      <FILE id="jmMBRO" name="group.cpp" compile="0" resource="0" file="Source/nsfplay/vcm/group.cpp"/>
+      <FILE id="Pogfzi" name="ReadMe.txt" compile="0" resource="0" file="Source/nsfplay/vcm/ReadMe.txt"/>
+      <FILE id="fry1sb" name="value.cpp" compile="1" resource="0" file="Source/nsfplay/vcm/value.cpp"/>
+      <FILE id="qf3V6H" name="vcm.h" compile="0" resource="0" file="Source/nsfplay/vcm/vcm.h"/>
+      <FILE id="TBjaRR" name="vcm.vcproj" compile="0" resource="0" file="Source/nsfplay/vcm/vcm.vcproj"/>
+      <FILE id="eGDyn4" name="vcm_ui.h" compile="0" resource="0" file="Source/nsfplay/vcm/vcm_ui.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" documentExtensions="nsf">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" osxCompatibility="10.9 SDK"/>
+        <CONFIGURATION isDebug="0" name="Release" osxCompatibility="10.9 SDK"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="gin" path="Gin/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_video" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../Applications/JUCE/modules"/>
+        <MODULEPATH id="gin" path="Gin/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="gin" showAllCode="1" useLocalCopy="0" useGlobalPath="0"/>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
