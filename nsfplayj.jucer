@@ -216,6 +216,14 @@
         <MODULEPATH id="juce_audio_utils" path=""/>
         <MODULEPATH id="juce_data_structures" path=""/>
         <MODULEPATH id="juce_audio_processors" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_cryptography" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_gui_extra" path=""/>
+        <MODULEPATH id="juce_opengl" path=""/>
+        <MODULEPATH id="juce_video" path=""/>
       </MODULEPATHS>
     </XCODE_MAC>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
@@ -231,6 +239,14 @@
         <MODULEPATH id="juce_audio_utils" path=""/>
         <MODULEPATH id="juce_data_structures" path=""/>
         <MODULEPATH id="juce_audio_processors" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_cryptography" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_gui_extra" path=""/>
+        <MODULEPATH id="juce_opengl" path=""/>
+        <MODULEPATH id="juce_video" path=""/>
       </MODULEPATHS>
     </LINUX_MAKE>
     <VS2015 targetFolder="Builds/VisualStudio2015">
@@ -246,6 +262,14 @@
         <MODULEPATH id="juce_audio_utils" path=""/>
         <MODULEPATH id="juce_data_structures" path=""/>
         <MODULEPATH id="juce_audio_processors" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_cryptography" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_gui_extra" path=""/>
+        <MODULEPATH id="juce_opengl" path=""/>
+        <MODULEPATH id="juce_video" path=""/>
       </MODULEPATHS>
     </VS2015>
   </EXPORTFORMATS>
