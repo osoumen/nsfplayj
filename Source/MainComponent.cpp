@@ -362,7 +362,7 @@ void MainComponent::buttonClicked (Button* buttonThatWasClicked)
     else if (buttonThatWasClicked == stop_button)
     {
         //[UserButtonCode_stop_button] -- add your button handler code here..
-		mPlayer.FadeOut(0);
+		mPlayer.FadeOut(10);
         //[/UserButtonCode_stop_button]
     }
     else if (buttonThatWasClicked == file_select_button)
