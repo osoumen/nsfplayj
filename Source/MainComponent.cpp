@@ -27,8 +27,9 @@
 //[MiscUserDefs] You can add your own user definitions and misc code here...
 #if JUCE_MAC
 #define NO_THREAD
-#endif
+#else
 static const int RENDER_BUFFER_MULTIPLIER = 3;
+#endif
 static const int VIEW_UPDATE_RATE_HZ = 60;
 //[/MiscUserDefs]
 
@@ -221,6 +222,7 @@ MainComponent::MainComponent ()
 	mConfig.SetValue("FDS_OPTION1", 0);
 	mConfig.SetValue("FDS_OPTION2", 1);
 	mConfig.SetValue("STOP_SEC", 5);
+	mConfig.SetValue("LOOP_NUM", 1);
 //	mConfig.SetValue("AUTO_DETECT", 0);
 //	mConfig.SetValue("AUTO_STOP", 0);
 

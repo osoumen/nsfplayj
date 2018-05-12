@@ -198,12 +198,16 @@
       <FILE id="TBjaRR" name="vcm.vcproj" compile="0" resource="0" file="Source/nsfplay/vcm/vcm.vcproj"/>
       <FILE id="eGDyn4" name="vcm_ui.h" compile="0" resource="0" file="Source/nsfplay/vcm/vcm_ui.h"/>
     </GROUP>
+    <FILE id="itElMb" name="nsfplay.png" compile="0" resource="1" file="nsfplay.png"/>
+    <FILE id="KwA7EC" name="nsfplay_small.png" compile="0" resource="1"
+          file="nsfplay_small.png"/>
   </MAINGROUP>
   <LIVE_SETTINGS>
     <OSX/>
   </LIVE_SETTINGS>
   <EXPORTFORMATS>
-    <XCODE_MAC targetFolder="Builds/MacOSX" documentExtensions="nsf">
+    <XCODE_MAC targetFolder="Builds/MacOSX" documentExtensions="nsf" bigIcon="itElMb"
+               smallIcon="KwA7EC">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug" osxCompatibility="10.9 SDK"/>
         <CONFIGURATION isDebug="0" name="Release" osxCompatibility="10.9 SDK"/>
