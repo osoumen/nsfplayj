@@ -7,7 +7,7 @@
   the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
   and re-saved.
 
-  Created with Projucer version: 5.3.1
+  Created with Projucer version: 5.3.2
 
   ------------------------------------------------------------------------------
 
@@ -45,23 +45,27 @@ MainComponent::MainComponent ()
 	mOutBufIsFull = false;
     //[/Constructor_pre]
 
-    addAndMakeVisible (songinfo = new GroupComponent ("song info",
-                                                      TRANS("NSF Header Infomation")));
+    songinfo.reset (new GroupComponent ("song info",
+                                        TRANS("NSF Header Infomation")));
+    addAndMakeVisible (songinfo.get());
 
-    addAndMakeVisible (engine_verison = new Label ("engine version",
-                                                   TRANS("version")));
+    engine_verison.reset (new Label ("engine version",
+                                     TRANS("version")));
+    addAndMakeVisible (engine_verison.get());
     engine_verison->setFont (Font (14.00f, Font::plain).withTypefaceStyle ("Regular").withExtraKerningFactor (0.111f));
     engine_verison->setJustificationType (Justification::centredRight);
     engine_verison->setEditable (false, false, false);
     engine_verison->setColour (TextEditor::textColourId, Colours::black);
     engine_verison->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
 
-    addAndMakeVisible (audio_settings = new TextButton ("Audio settings"));
+    audio_settings.reset (new TextButton ("Audio settings"));
+    addAndMakeVisible (audio_settings.get());
     audio_settings->setButtonText (TRANS("Audio settings..."));
     audio_settings->addListener (this);
 
-    addAndMakeVisible (title_label = new Label ("title label",
-                                                TRANS("Title")));
+    title_label.reset (new Label ("title label",
+                                  TRANS("Title")));
+    addAndMakeVisible (title_label.get());
     title_label->setFont (Font (15.00f, Font::plain).withTypefaceStyle ("Regular"));
     title_label->setJustificationType (Justification::centredRight);
     title_label->setEditable (false, false, false);
@@ -70,8 +74,9 @@ MainComponent::MainComponent ()
 
     title_label->setBounds (16, 72, 80, 24);
 
-    addAndMakeVisible (artist_label = new Label ("artist label",
-                                                 TRANS("Artist")));
+    artist_label.reset (new Label ("artist label",
+                                   TRANS("Artist")));
+    addAndMakeVisible (artist_label.get());
     artist_label->setFont (Font (15.00f, Font::plain).withTypefaceStyle ("Regular"));
     artist_label->setJustificationType (Justification::centredRight);
     artist_label->setEditable (false, false, false);
@@ -80,8 +85,9 @@ MainComponent::MainComponent ()
 
     artist_label->setBounds (16, 104, 80, 24);
 
-    addAndMakeVisible (copyright_label = new Label ("copyright label",
-                                                    TRANS("Copyright")));
+    copyright_label.reset (new Label ("copyright label",
+                                      TRANS("Copyright")));
+    addAndMakeVisible (copyright_label.get());
     copyright_label->setFont (Font (15.00f, Font::plain).withTypefaceStyle ("Regular"));
     copyright_label->setJustificationType (Justification::centredRight);
     copyright_label->setEditable (false, false, false);
@@ -90,8 +96,9 @@ MainComponent::MainComponent ()
 
     copyright_label->setBounds (16, 136, 80, 24);
 
-    addAndMakeVisible (soundchip_label = new Label ("soundchip label",
-                                                    TRANS("Soundchip")));
+    soundchip_label.reset (new Label ("soundchip label",
+                                      TRANS("Soundchip")));
+    addAndMakeVisible (soundchip_label.get());
     soundchip_label->setFont (Font (15.00f, Font::plain).withTypefaceStyle ("Regular"));
     soundchip_label->setJustificationType (Justification::centredRight);
     soundchip_label->setEditable (false, false, false);
@@ -100,8 +107,9 @@ MainComponent::MainComponent ()
 
     soundchip_label->setBounds (16, 168, 80, 24);
 
-    addAndMakeVisible (song_no = new Label ("song_no",
-                                            String()));
+    song_no.reset (new Label ("song_no",
+                              String()));
+    addAndMakeVisible (song_no.get());
     song_no->setFont (Font (15.00f, Font::plain).withTypefaceStyle ("Regular"));
     song_no->setJustificationType (Justification::centred);
     song_no->setEditable (false, false, false);
@@ -109,32 +117,37 @@ MainComponent::MainComponent ()
     song_no->setColour (TextEditor::textColourId, Colours::black);
     song_no->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
 
-    addAndMakeVisible (watch = new ToggleButton ("watch button"));
+    watch.reset (new ToggleButton ("watch button"));
+    addAndMakeVisible (watch.get());
     watch->setButtonText (TRANS("watch"));
     watch->addListener (this);
     watch->setToggleState (true, dontSendNotification);
 
-    addAndMakeVisible (time_slider = new Slider ("time slider"));
+    time_slider.reset (new Slider ("time slider"));
+    addAndMakeVisible (time_slider.get());
     time_slider->setRange (0, 10, 0);
     time_slider->setSliderStyle (Slider::LinearHorizontal);
     time_slider->setTextBoxStyle (Slider::NoTextBox, true, 80, 20);
     time_slider->addListener (this);
 
-    addAndMakeVisible (time_text = new Label ("time text",
-                                              TRANS("--:--")));
+    time_text.reset (new Label ("time text",
+                                TRANS("--:--")));
+    addAndMakeVisible (time_text.get());
     time_text->setFont (Font (15.00f, Font::plain).withTypefaceStyle ("Regular"));
     time_text->setJustificationType (Justification::centred);
     time_text->setEditable (false, false, false);
     time_text->setColour (TextEditor::textColourId, Colours::black);
     time_text->setColour (TextEditor::backgroundColourId, Colour (0x00000000));
 
-    addAndMakeVisible (song_no_btn = new Slider ("song no button"));
+    song_no_btn.reset (new Slider ("song no button"));
+    addAndMakeVisible (song_no_btn.get());
     song_no_btn->setRange (0, 10, 1);
     song_no_btn->setSliderStyle (Slider::IncDecButtons);
     song_no_btn->setTextBoxStyle (Slider::NoTextBox, false, 80, 20);
     song_no_btn->addListener (this);
 
-    addAndMakeVisible (play_button = new ImageButton ("play button"));
+    play_button.reset (new ImageButton ("play button"));
+    addAndMakeVisible (play_button.get());
     play_button->setButtonText (TRANS("play"));
     play_button->addListener (this);
 
@@ -144,7 +157,8 @@ MainComponent::MainComponent ()
                             Image(), 1.000f, Colour (0x00000000));
     play_button->setBounds (16, 218, 20, 20);
 
-    addAndMakeVisible (stop_button = new ImageButton ("stop button"));
+    stop_button.reset (new ImageButton ("stop button"));
+    addAndMakeVisible (stop_button.get());
     stop_button->setButtonText (TRANS("stop"));
     stop_button->addListener (this);
 
@@ -154,11 +168,13 @@ MainComponent::MainComponent ()
                             Image(), 1.000f, Colour (0x00000000));
     stop_button->setBounds (40, 218, 20, 20);
 
-    addAndMakeVisible (file_select_button = new TextButton ("file select button"));
+    file_select_button.reset (new TextButton ("file select button"));
+    addAndMakeVisible (file_select_button.get());
     file_select_button->setButtonText (TRANS("..."));
     file_select_button->addListener (this);
 
-    addAndMakeVisible (title = new TextEditor ("title"));
+    title.reset (new TextEditor ("title"));
+    addAndMakeVisible (title.get());
     title->setMultiLine (false);
     title->setReturnKeyStartsNewLine (false);
     title->setReadOnly (true);
@@ -167,7 +183,8 @@ MainComponent::MainComponent ()
     title->setPopupMenuEnabled (true);
     title->setText (String());
 
-    addAndMakeVisible (artist = new TextEditor ("artist"));
+    artist.reset (new TextEditor ("artist"));
+    addAndMakeVisible (artist.get());
     artist->setMultiLine (false);
     artist->setReturnKeyStartsNewLine (false);
     artist->setReadOnly (true);
@@ -176,7 +193,8 @@ MainComponent::MainComponent ()
     artist->setPopupMenuEnabled (true);
     artist->setText (String());
 
-    addAndMakeVisible (copyright = new TextEditor ("copyright"));
+    copyright.reset (new TextEditor ("copyright"));
+    addAndMakeVisible (copyright.get());
     copyright->setMultiLine (false);
     copyright->setReturnKeyStartsNewLine (false);
     copyright->setReadOnly (true);
@@ -185,7 +203,8 @@ MainComponent::MainComponent ()
     copyright->setPopupMenuEnabled (true);
     copyright->setText (String());
 
-    addAndMakeVisible (soundchip = new TextEditor ("soundchip"));
+    soundchip.reset (new TextEditor ("soundchip"));
+    addAndMakeVisible (soundchip.get());
     soundchip->setMultiLine (false);
     soundchip->setReturnKeyStartsNewLine (false);
     soundchip->setReadOnly (true);
@@ -194,7 +213,8 @@ MainComponent::MainComponent ()
     soundchip->setPopupMenuEnabled (true);
     soundchip->setText (String());
 
-    addAndMakeVisible (file = new TextEditor ("file"));
+    file.reset (new TextEditor ("file"));
+    addAndMakeVisible (file.get());
     file->setMultiLine (false);
     file->setReturnKeyStartsNewLine (false);
     file->setReadOnly (true);
@@ -334,18 +354,18 @@ void MainComponent::buttonClicked (Button* buttonThatWasClicked)
     //[UserbuttonClicked_Pre]
     //[/UserbuttonClicked_Pre]
 
-    if (buttonThatWasClicked == audio_settings)
+    if (buttonThatWasClicked == audio_settings.get())
     {
         //[UserButtonCode_audio_settings] -- add your button handler code here..
 		showDeviceSetting();
         //[/UserButtonCode_audio_settings]
     }
-    else if (buttonThatWasClicked == watch)
+    else if (buttonThatWasClicked == watch.get())
     {
         //[UserButtonCode_watch] -- add your button handler code here..
         //[/UserButtonCode_watch]
     }
-    else if (buttonThatWasClicked == play_button)
+    else if (buttonThatWasClicked == play_button.get())
     {
         //[UserButtonCode_play_button] -- add your button handler code here..
 		GenericScopedLock<CriticalSection> lock(mPlayerMutex);
@@ -361,13 +381,13 @@ void MainComponent::buttonClicked (Button* buttonThatWasClicked)
 		startRender();
         //[/UserButtonCode_play_button]
     }
-    else if (buttonThatWasClicked == stop_button)
+    else if (buttonThatWasClicked == stop_button.get())
     {
         //[UserButtonCode_stop_button] -- add your button handler code here..
 		mPlayer.FadeOut(10);
         //[/UserButtonCode_stop_button]
     }
-    else if (buttonThatWasClicked == file_select_button)
+    else if (buttonThatWasClicked == file_select_button.get())
     {
         //[UserButtonCode_file_select_button] -- add your button handler code here..
 		FileChooser chooser("Choose NSF File..", File(), "*.nsf");
@@ -385,7 +405,7 @@ void MainComponent::sliderValueChanged (Slider* sliderThatWasMoved)
     //[UsersliderValueChanged_Pre]
     //[/UsersliderValueChanged_Pre]
 
-    if (sliderThatWasMoved == time_slider)
+    if (sliderThatWasMoved == time_slider.get())
     {
         //[UserSliderCode_time_slider] -- add your slider handling code here..
 		if (!mPlayer.IsStopped()) {
@@ -403,7 +423,7 @@ void MainComponent::sliderValueChanged (Slider* sliderThatWasMoved)
 		}
         //[/UserSliderCode_time_slider]
     }
-    else if (sliderThatWasMoved == song_no_btn)
+    else if (sliderThatWasMoved == song_no_btn.get())
     {
         //[UserSliderCode_song_no_btn] -- add your slider handling code here..
 		if (mNsf.GetSongNum() > 1) {

@@ -7,7 +7,7 @@
   the "//[xyz]" and "//[/xyz]" sections will be retained when the file is loaded
   and re-saved.
 
-  Created with Projucer version: 5.3.1
+  Created with Projucer version: 5.3.2
 
   ------------------------------------------------------------------------------
 
@@ -129,26 +129,26 @@ private:
     //[/UserVariables]
 
     //==============================================================================
-    ScopedPointer<GroupComponent> songinfo;
-    ScopedPointer<Label> engine_verison;
-    ScopedPointer<TextButton> audio_settings;
-    ScopedPointer<Label> title_label;
-    ScopedPointer<Label> artist_label;
-    ScopedPointer<Label> copyright_label;
-    ScopedPointer<Label> soundchip_label;
-    ScopedPointer<Label> song_no;
-    ScopedPointer<ToggleButton> watch;
-    ScopedPointer<Slider> time_slider;
-    ScopedPointer<Label> time_text;
-    ScopedPointer<Slider> song_no_btn;
-    ScopedPointer<ImageButton> play_button;
-    ScopedPointer<ImageButton> stop_button;
-    ScopedPointer<TextButton> file_select_button;
-    ScopedPointer<TextEditor> title;
-    ScopedPointer<TextEditor> artist;
-    ScopedPointer<TextEditor> copyright;
-    ScopedPointer<TextEditor> soundchip;
-    ScopedPointer<TextEditor> file;
+    std::unique_ptr<GroupComponent> songinfo;
+    std::unique_ptr<Label> engine_verison;
+    std::unique_ptr<TextButton> audio_settings;
+    std::unique_ptr<Label> title_label;
+    std::unique_ptr<Label> artist_label;
+    std::unique_ptr<Label> copyright_label;
+    std::unique_ptr<Label> soundchip_label;
+    std::unique_ptr<Label> song_no;
+    std::unique_ptr<ToggleButton> watch;
+    std::unique_ptr<Slider> time_slider;
+    std::unique_ptr<Label> time_text;
+    std::unique_ptr<Slider> song_no_btn;
+    std::unique_ptr<ImageButton> play_button;
+    std::unique_ptr<ImageButton> stop_button;
+    std::unique_ptr<TextButton> file_select_button;
+    std::unique_ptr<TextEditor> title;
+    std::unique_ptr<TextEditor> artist;
+    std::unique_ptr<TextEditor> copyright;
+    std::unique_ptr<TextEditor> soundchip;
+    std::unique_ptr<TextEditor> file;
 
 
     //==============================================================================

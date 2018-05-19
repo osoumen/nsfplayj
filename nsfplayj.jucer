@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT name="nsfplayj" projectType="guiapp" jucerVersion="5.3.1">
+<JUCERPROJECT name="nsfplayj" projectType="guiapp" jucerVersion="5.3.2" id="KUxn0t">
   <MAINGROUP id="JOc2dT" name="nsfplayj">
     <GROUP id="{94CEFD1F-99FE-EDC9-D523-73B56832FB73}" name="Source">
       <FILE id="rQsKIH" name="MainComponent.cpp" compile="1" resource="0"
@@ -230,6 +230,30 @@
         <MODULEPATH id="juce_video" path=""/>
       </MODULEPATHS>
     </XCODE_MAC>
+    <XCODE_IPHONE targetFolder="Builds/iOS" UIFileSharingEnabled="1" smallIcon="KwA7EC"
+                  bigIcon="itElMb">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path=""/>
+        <MODULEPATH id="juce_opengl" path=""/>
+        <MODULEPATH id="juce_gui_extra" path=""/>
+        <MODULEPATH id="juce_gui_basics" path=""/>
+        <MODULEPATH id="juce_graphics" path=""/>
+        <MODULEPATH id="juce_events" path=""/>
+        <MODULEPATH id="juce_data_structures" path=""/>
+        <MODULEPATH id="juce_cryptography" path=""/>
+        <MODULEPATH id="juce_core" path=""/>
+        <MODULEPATH id="juce_audio_utils" path=""/>
+        <MODULEPATH id="juce_audio_processors" path=""/>
+        <MODULEPATH id="juce_audio_formats" path=""/>
+        <MODULEPATH id="juce_audio_devices" path=""/>
+        <MODULEPATH id="juce_audio_basics" path=""/>
+        <MODULEPATH id="gin" path="Gin/modules"/>
+      </MODULEPATHS>
+    </XCODE_IPHONE>
     <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
       <CONFIGURATIONS>
         <CONFIGURATION isDebug="1" name="Debug"/>
